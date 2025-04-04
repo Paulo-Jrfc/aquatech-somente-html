@@ -1,0 +1,127 @@
+/* Adicionar aqui TODA a estilização criada para sua aplicação. */
+
+body{
+    margin: 0;
+    font-family: sans-serif;  
+}
+:root { /* Definição de variáveis | define o escopo global da variável*/
+    --azul: #32d9cd;
+    --amarela: #e3b062;
+}
+
+/* HEADER */
+.header{
+    background-color: black;
+    border-bottom: 3px solid var(--azul);
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.titulo{
+    color: var(--azul);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: var(--amarela);
+    width: 300px;
+}
+.navbar a{
+    color: var(--amarela);
+    text-decoration: none;
+}
+.agora{
+    font-weight: bolder; /* Peso da fonte*/
+}
+
+/* BANNER */
+.banner{
+    height: 400px; /* Metodo de tamanho fixo (px) */
+    width: 100%; /* Metodo de tamanho fluido (%) */
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    background-size: cover;
+}
+
+.banner .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .container p{
+    width: 170px;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.banner .container span{
+    font-weight: bolder;
+}
+/* MISSÃO E VALORES */
+.social{
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+.social .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box img{
+    width: 120px;
+    height: 120px;
+}
+
+.box h4{
+    margin: 0;
+    margin-top: 10px;
+    color: #e4005a;
+
+}
+/* FOOTER */ 
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+.footer .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer h4{
+    margin-bottom: 0;
+}
+
